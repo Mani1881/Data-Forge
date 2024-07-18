@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="index.js"></script>
+    <title>Contact Me</title>
+    <style>
+       
+    /* Add this to make the layout responsive */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: radial-gradient(circle at 10% 20%, rgb(253, 239, 132) 0%, rgb(247, 198, 169) 54.2%, rgb(21, 186, 196) 100.3%);
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: radial-gradient(circle at 10% 20%, rgb(254, 255, 165) 0%, rgb(255, 232, 182) 90%);
+}
+header h1 {
+  margin: 0;
+}
+
+.home-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #010e17;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+form {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+  background-color: #d885e9;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #c77bd9;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  main {
+    padding: 10px;
+  }
+  form {
+    margin: 20px auto;
+  }
+  input, textarea {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 5px;
+  }
+  form {
+    margin: 10px auto;
+  }
+  input, textarea {
+    margin-bottom: 5px;
+  }
+}
+  @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
+       
+       
+        .imp .input {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40vw;
+            height: 50px;
+            border-radius: 20px;
+            background: rgb(202 253 255 / 50%);
+        }
+        .imp .input .talk {
+            background: transparent;
+            outline: none;
+            border: none;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .imp .input .talk i {
+            font-size: 20px;
+            color: #000808;
+        }
+        .imp .input .content {
+            color: #8eca18;
+            font-size: 15px;
+            margin-right: 20px;
+        }
+    </style>
+   
+</head>
+<body>
+   
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Me</h1>
+        <a href="in.html" class="home-button">Home</a>
+
+    </header>
+    <main>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+        <div id="responseMessage"></div>
+        <section class="imp">
+      
+        <div class="input">
+            <button class="talk"><i class="fas fa-microphone-alt"></i></button>
+            <h1 class="content">Click here to speak</h1>
+        </div>
+    </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
